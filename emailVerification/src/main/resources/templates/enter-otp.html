@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Xác thực OTP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="otp-card">
+        <h1>Xác thực OTP</h1>
+        <p>Mã đã được gửi đến <span id="emailDisplay"></span></p>
+        <div id="timer">Thời gian còn lại: 2:00</div>
+        <div class="otp-card-inputs">
+            <input type="text" maxlength="1" autofocus/>
+            <input type="text" maxlength="1"/>
+            <input type="text" maxlength="1"/>
+            <input type="text" maxlength="1"/>
+            <input type="text" maxlength="1"/>
+            <input type="text" maxlength="1">
+        </div>
+        <p>Không nhận được OTP? <a href="#" onclick="resendOTP()">Gửi lại</a></p>
+        <button id="verifyButton" disabled onclick="verifyOTP()">Xác thực OTP</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
